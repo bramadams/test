@@ -13,6 +13,7 @@ using namespace std;
 
 /* This function reads a file, then prints it, then tries out HashMap functions. */
 int main(int argc, char** argv) {
+  HashMap mymap;
 
   if(argc<=1){
     cout << "Need file name as argument!" << endl;
@@ -27,6 +28,20 @@ int main(int argc, char** argv) {
   }
 
   //utilisation normale
+  string popword="";
+  int popcount=0;
+  vector<string> thekeys=mymap.getKeys();
+  for(int i=0;i<thekeys.size();i++){
+    int count=0;
+    mymap.get(thekeys[i],count);
+    if(count>popcount){
+      popcount=count;
+      popword=thekeys[i];
+    }
+  }
+
+  cout << popword << " => " << popcount << endl;
+
   HashMap hmap;
   hmap.put("v1",1);
   hmap.put("v3",1);
