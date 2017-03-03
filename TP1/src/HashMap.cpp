@@ -103,3 +103,11 @@ std::vector<std::string> HashMap::getKeys() const{
 
   return res;
 }
+
+int HashMap::compteur(const std::string& key){
+  int val=0;
+  get(key,val);
+  val++;
+  put(key,val);
+  return val;
+}

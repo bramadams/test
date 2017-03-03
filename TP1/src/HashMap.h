@@ -34,6 +34,7 @@ public:
 
     std::vector<std::string> getKeys() const;
 
+    int compteur(const std::string& key);
 private:
     // hash table
     HashNode **table;
