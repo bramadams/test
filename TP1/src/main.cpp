@@ -10,7 +10,7 @@
 
 using namespace std;
 
-/* */
+/* This function reads a file, then prints it, then tries out HashMap functions. */
 int main(int argc, char** argv) {
 
   //utilisation normale
