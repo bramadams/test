@@ -5,6 +5,7 @@
  * Created on November 8, 2015, 8:39 PM
  */
 
+#include <fstream>
 #include <iostream>
 #include "HashMap.h"
 
@@ -12,6 +13,18 @@ using namespace std;
 
 /* */
 int main(int argc, char** argv) {
+
+  if(argc<=1){
+    cout << "Need file name as argument!" << endl;
+    exit(1);
+  }else{
+    ifstream file;
+    file.open(argv[1]);
+    string word;
+    while (file >> word){
+      cout << word << endl;
+    }
+  }
 
   //utilisation normale
   HashMap hmap;
