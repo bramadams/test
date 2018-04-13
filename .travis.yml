@@ -1,2 +1,5 @@
 language: c++
+install:
+  - sudo apt-get update
+  - sudo apt-get install libcppunit-dev libcppunit-1.12-1
 script: make -C cplusplus && ./cplusplus/average
