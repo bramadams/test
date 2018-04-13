@@ -19,7 +19,7 @@ double average(int values[],int n)
     res+=values[i];
   }
 
-  res/=n;
+  res/=(double)n;
 
   return res;
 }
