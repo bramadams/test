@@ -11,8 +11,8 @@ AverageTest.o: AverageTest.cpp AverageTest.h
 average.o:  average.cpp average.h
 	g++ -c average.cpp -g -O0 --coverage
 
-run: average
-	./average
+test: average
+	@CODE="$(shell ./average 2>&1 >/dev/null | grep -v 'OK (6)' | wc -c | perl -pe 's/\s//g')" ; exit $$CODE
 
 gcov: cleangcovrun run
 	gcov average.cpp
