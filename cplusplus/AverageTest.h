@@ -10,8 +10,6 @@ class AverageTest : public CppUnit::TestFixture
   CPPUNIT_TEST( test2 );
   CPPUNIT_TEST( test3 );
   CPPUNIT_TEST( test4 );
-  CPPUNIT_TEST( test5 );
-  CPPUNIT_TEST( test6 );
   CPPUNIT_TEST_SUITE_END();
 private:
   // No private variables here :-(
@@ -22,6 +20,4 @@ public:
   void test2();
   void test3();
   void test4();
-  void test5();
-  void test6();
 };
