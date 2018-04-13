@@ -1,2 +1,2 @@
 language: c++
-script: cd cplusplus & make && ./average
+script: make -C cplusplus && ./cplusplus/average
