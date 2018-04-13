@@ -45,15 +45,3 @@ void AverageTest::test4()
   CPPUNIT_ASSERT_EQUAL(-3.0, average(values,3));
 }
 
-
-void AverageTest::test5()
-{
-
-}
-
-
-void AverageTest::test6()
-{
-
-}
-
