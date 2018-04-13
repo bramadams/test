@@ -34,26 +34,28 @@ void AverageTest::test2()
 
 void AverageTest::test3()
 {
-  /*  int values[]={1,2,3,4};
+  int values[]={1,2,3,4};
   double res=10.0/4.0;
-  CPPUNIT_ASSERT_EQUAL(res, average(values,4));*/
+  CPPUNIT_ASSERT_EQUAL(res, average(values,4));
 }
 
 void AverageTest::test4()
 {
-  /*  int values[]={-3,-2,-4};
-      CPPUNIT_ASSERT_EQUAL(-3.0, average(values,3));*/
+  int values[]={-3,-2,-4};
+  CPPUNIT_ASSERT_EQUAL(-3.0, average(values,3));
 }
 
 
 void AverageTest::test5()
 {
-
+  int values[]={0};
+  CPPUNIT_ASSERT_EQUAL(0.0, average(values,1));
 }
 
 
 void AverageTest::test6()
 {
-
+  int values[]={-2,-1,1,2};
+  CPPUNIT_ASSERT_EQUAL(0.0, average(values,4));
 }
 
